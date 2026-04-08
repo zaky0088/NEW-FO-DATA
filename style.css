@@ -1,0 +1,69 @@
+body {
+  font-family: Arial;
+  background: #0b1220;
+  color: white;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #111a2e;
+}
+
+.status {
+  color: #4caf50;
+}
+
+.container {
+  padding: 20px;
+}
+
+.form input, .form select {
+  padding: 8px;
+  margin: 5px;
+  background: #1c2740;
+  border: none;
+  color: white;
+}
+
+button {
+  padding: 8px 15px;
+  background: #00c853;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.card {
+  flex: 1;
+  background: #13203a;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.red {
+  background: #b71c1c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+td button {
+  margin: 2px;
+}
