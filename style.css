@@ -67,10 +67,12 @@ th, td {
 td button {
   margin: 2px;
 }
+
+
 .core-badge {
   padding: 5px 10px;
   border-radius: 6px;
-  color: white;
   font-size: 12px;
   display: inline-block;
+  box-shadow: 0 0 8px rgba(255,255,255,0.3);
 }
