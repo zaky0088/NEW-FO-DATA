@@ -28,7 +28,11 @@ function render() {
         <td>${i+1}</td>
         <td>${d.jalur}</td>
         <td>${d.odp}</td>
-        <td>${d.core}</td>
+        <td>
+  <span class="core-badge" style="background:${getCoreColor(d.core)}; color:${d.core == 6 ? 'black' : 'white'}">
+    ${d.core}
+  </span>
+</td>
         <td>${d.pot}</td>
         <td>${d.status}</td>
         <td>
