@@ -52,6 +52,25 @@ function cariData() {
   let keyword = document.getElementById("search").value.toLowerCase();
   let rows = document.querySelectorAll("tbody tr");
 
+  function getCoreColor(core) {
+  const colors = [
+    "#2196F3", // 1 biru
+    "#FF9800", // 2 orange
+    "#4CAF50", // 3 hijau
+    "#795548", // 4 coklat
+    "#9E9E9E", // 5 abu
+    "#FFFFFF", // 6 putih
+    "#F44336", // 7 merah
+    "#000000", // 8 hitam
+    "#FFEB3B", // 9 kuning
+    "#9C27B0", // 10 ungu
+    "#E91E63", // 11 pink
+    "#00BCD4"  // 12 aqua
+  ];
+
+  return colors[(core - 1) % colors.length];
+  }
+  
   rows.forEach(row => {
     row.style.display = row.innerText.toLowerCase().includes(keyword) ? "" : "none";
   });
