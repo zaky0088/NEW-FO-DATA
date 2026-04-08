@@ -1,8 +1,7 @@
 body {
-  font-family: Arial;
-  background: #0b1220;
+  background: #0a0f1f;
   color: white;
-  margin: 0;
+  font-family: sans-serif;
 }
 
 header {
@@ -13,7 +12,7 @@ header {
 }
 
 .status {
-  color: #4caf50;
+  color: #00ff88;
 }
 
 .container {
@@ -21,7 +20,7 @@ header {
 }
 
 .form input, .form select {
-  padding: 8px;
+  padding: 10px;
   margin: 5px;
   background: #1c2740;
   border: none;
@@ -29,10 +28,9 @@ header {
 }
 
 button {
-  padding: 8px 15px;
   background: #00c853;
+  padding: 10px;
   border: none;
-  color: white;
   cursor: pointer;
 }
 
@@ -44,14 +42,18 @@ button {
 
 .card {
   flex: 1;
-  background: #13203a;
   padding: 15px;
   border-radius: 10px;
+  background: #13203a;
   text-align: center;
 }
 
 .red {
-  background: #b71c1c;
+  background: #8b0000;
+}
+
+.glow {
+  box-shadow: 0 0 10px rgba(0,255,255,0.5);
 }
 
 table {
@@ -64,15 +66,16 @@ th, td {
   border-bottom: 1px solid #333;
 }
 
-td button {
-  margin: 2px;
-}
-
-
 .core-badge {
   padding: 5px 10px;
   border-radius: 6px;
-  font-size: 12px;
-  display: inline-block;
-  box-shadow: 0 0 8px rgba(255,255,255,0.3);
+  box-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+
+.active {
+  color: #00ff88;
+}
+
+.maintenance {
+  color: orange;
 }
